@@ -8,12 +8,17 @@ class MovimentationModel extends ManagedObject<_MovimentationModel>
 
 @Table(name: 'movimentation')
 class _MovimentationModel {
-  
   @Column(primaryKey: true, autoincrement: true)
   int id;
 
   @Column()
+  String description;
+
+  @Column()
   DateTime movimentationDate;
+
+  @Column()
+  double value;
 
   @Relate(#movimentations)
   UserModel user;

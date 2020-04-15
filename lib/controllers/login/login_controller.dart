@@ -11,6 +11,10 @@ class LoginController extends ResourceController {
 
   @Operation.post()
   Future<Response> login(@Bind.body() LoginRequest request) async {
+    final validate = request.validate();
+    if (validate.isNotEmpty) {
+      return Response.badRequest(body: validate);
+    }
     final token = await userService.login(request);
     return Response.ok({'authenticate': token != null, 'token': token});
   }

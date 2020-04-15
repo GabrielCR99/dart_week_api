@@ -1,6 +1,8 @@
 import 'package:dart_week_api/model/user_model.dart';
 import 'package:dart_week_api/model/category_model.dart';
 import 'package:dart_week_api/model/movimentation_model.dart';
+import 'package:dart_week_api/routers/category_router.dart';
+import 'package:dart_week_api/routers/movimentation_router.dart';
 import 'package:dart_week_api/routers/users_router.dart';
 import 'dart_week_api.dart';
 
@@ -36,6 +38,8 @@ class DartWeekApiChannel extends ApplicationChannel {
   Controller get entryPoint {
     final router = Router();
     UsersRouter.configure(router, context);
+    CategoryRouter.configure(router, context);
+    MovimentationRouter.configure(router, context);
     return router;
   }
 

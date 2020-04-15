@@ -104,6 +104,12 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/gabri/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/intl-0.16.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.5"
+    },
+    {
       "name": "io",
       "rootUri": "file:///C:/Users/gabri/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/io-0.3.3",
       "packageUri": "lib/",
@@ -374,7 +380,7 @@
       "languageVersion": "2.0"
     }
   ],
-  "generated": "2020-04-01T03:17:36.166996Z",
+  "generated": "2020-04-14T21:33:34.693329Z",
   "generator": "pub",
   "generatorVersion": "2.7.2"
 }
