@@ -57,7 +57,7 @@ class MovimentationsController extends ResourceController {
       return Response.ok({});
     } catch (e) {
       return Response.serverError(
-          body: {'message': 'Erro ao salvar movimentação!'});
+          body: {'message': 'Erro ao salvar movimentação! $e'});
     }
   }
 }
